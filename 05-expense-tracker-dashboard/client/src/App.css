@@ -1,0 +1,92 @@
+.dash { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+button.primary {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.summary-row { display: flex; gap: 0.8rem; margin-bottom: 1.2rem; }
+.summary-card {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.summary-card .label { display: block; font-size: 0.8rem; color: #6b7280; }
+.summary-card .value { display: block; font-size: 1.6rem; font-weight: 700; }
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.chart-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.chart-card h3 { margin: 0 0 0.5rem; font-size: 0.9rem; color: #374151; }
+
+.toolbar { margin-bottom: 0.8rem; }
+.toolbar select {
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.expense-table th, .expense-table td {
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.expense-table th { background: #f9fafb; font-size: 0.8rem; color: #6b7280; }
+.tag {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+.delete { background: transparent; border: none; color: #9ca3af; cursor: pointer; }
+.delete:hover { color: #dc2626; }
+.empty { text-align: center; color: #9ca3af; padding: 2rem; }
+
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal {
+  background: white; padding: 1.5rem; border-radius: 12px;
+  width: 340px; display: flex; flex-direction: column; gap: 0.6rem;
+}
+.modal input, .modal select {
+  padding: 0.5rem 0.7rem; border-radius: 8px; border: 1px solid #d1d5db;
+  font-family: inherit;
+}
+.modal-actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 0.5rem; }
+.modal-actions button { padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #d1d5db; background: white; cursor: pointer; }
+
+@media (max-width: 700px) {
+  .charts-row { grid-template-columns: 1fr; }
+}

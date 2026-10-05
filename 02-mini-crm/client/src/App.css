@@ -1,0 +1,86 @@
+.crm {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+button.primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button { border-radius: 8px; cursor: pointer; }
+button.danger { color: #dc2626; background: transparent; border: 1px solid #dc2626; }
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.stat-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  min-width: 140px;
+}
+.stat-card.small { min-width: 90px; padding: 0.6rem 0.8rem; }
+.stat-card .label { display: block; font-size: 0.75rem; color: #6b7280; }
+.stat-card .value { display: block; font-size: 1.4rem; font-weight: 700; }
+.stat-card.small .value { font-size: 1.1rem; }
+
+.toolbar {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.toolbar input, .toolbar select {
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+.toolbar input { flex: 1; }
+
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.contacts-table th, .contacts-table td {
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.contacts-table th { background: #f9fafb; font-size: 0.8rem; color: #6b7280; }
+.muted { font-size: 0.8rem; color: #6b7280; }
+.row-actions { display: flex; gap: 0.4rem; }
+.row-actions button { background: #f3f4f6; border: none; padding: 0.35rem 0.6rem; }
+.empty { text-align: center; color: #9ca3af; padding: 2rem; }
+
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal {
+  background: white; padding: 1.5rem; border-radius: 12px;
+  width: 380px; display: flex; flex-direction: column; gap: 0.6rem;
+}
+.modal input, .modal select, .modal textarea {
+  padding: 0.5rem 0.7rem; border-radius: 8px; border: 1px solid #d1d5db;
+  font-family: inherit;
+}
+.modal-actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 0.5rem; }
+.modal-actions button { padding: 0.5rem 1rem; border: 1px solid #d1d5db; background: white; }
